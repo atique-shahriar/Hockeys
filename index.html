@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Install -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Icon Install -->
+    <script src="https://kit.fontawesome.com/f8e7655de4.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind + daisyui install -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        redcolor: '#FF4240',
+                        graycolor: '#424247',
+                        blackcolor: '#131318',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope text-blackcolor">
+    <header>
+        <!-- Navigation Menu -->
+        <nav class="w-11/12 lg:w-4/5 mx-auto my-8">
+            <div class="flex justify-between items-center flex-wrap">
+                <div class="flex items-center flex-row">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="lg:hidden mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Page</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-extrabold">Hockey<span class="text-redcolor">’</span>s</h3>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Page</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-magnifying-glass mr-4 lg:hidden"></i>
+                    <a class="btn bg-redcolor text-white text-[20px] font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+</body>
+
+</html>
